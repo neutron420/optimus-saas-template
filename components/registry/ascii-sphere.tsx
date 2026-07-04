@@ -55,7 +55,7 @@ export interface AsciiSphereProps {
   className?: string;
 }
 
-export function AsciiSphere({
+export default function AsciiSphere({
   chars = "░▒▓█▀▄▌▐│─┤├┴┬╭╮╰╯",
   speedX = 0.2,
   speedY = 0.3,
