@@ -92,14 +92,16 @@ function AIVisual() {
       {[0, 1, 2, 3, 4, 5].map((i) => {
         const angle = (i * 60) * (Math.PI / 180);
         const radius = 50;
+        const x2Val = parseFloat((100 + Math.cos(angle) * radius).toFixed(4));
+        const y2Val = parseFloat((80 + Math.sin(angle) * radius).toFixed(4));
         return (
           <g key={i}>
             {/* Connection line */}
             <line
               x1="100"
               y1="80"
-              x2={100 + Math.cos(angle) * radius}
-              y2={80 + Math.sin(angle) * radius}
+              x2={x2Val}
+              y2={y2Val}
               stroke="currentColor"
               strokeWidth="1"
               opacity="0.3"
@@ -115,8 +117,8 @@ function AIVisual() {
             
             {/* Outer node */}
             <circle
-              cx={100 + Math.cos(angle) * radius}
-              cy={80 + Math.sin(angle) * radius}
+              cx={x2Val}
+              cy={y2Val}
               r="6"
               fill="none"
               stroke="currentColor"
