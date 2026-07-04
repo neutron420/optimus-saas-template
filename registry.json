@@ -1,0 +1,42 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "optimus-ui",
+  "homepage": "https://github.com/optimus-template",
+  "items": [
+    {
+      "name": "ascii-sphere",
+      "type": "registry:ui",
+      "title": "ASCII Sphere",
+      "description": "A highly-configurable, responsive 3D projection sphere rendered using ASCII character matrices on standard 2D canvas.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/registry/ascii-sphere.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "ascii-sphere-demo",
+      "type": "registry:ui",
+      "title": "ASCII Sphere Demo",
+      "description": "Interactive settings and controls dashboard for configuring the ASCII Sphere parameters.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "slider",
+        "select",
+        "card",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "components/registry/ascii-sphere-demo.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
